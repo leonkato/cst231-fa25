@@ -80,7 +80,6 @@ public class MyHello {
           System.out.println(x);
 
         /*
-
          * What’s `12 % 3`? What about `14 % 3`?
          * `%` is not a percentage; it’s the remainder operator (modulus).
          */
