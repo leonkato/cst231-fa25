@@ -1,7 +1,10 @@
  
 // msWeek02Triangle.java
 // Demo for Week 2: Random Triangle Checker
-// Tools shown: Random numbers (with Math.abs, %, +1), Math method calls, boolean comparisons
+// Tools shown:
+// Random numbers (with Math.abs, %, +1),
+// Math method calls,
+// boolean comparisons
 package wk02;
 
 import java.util.Random;
@@ -21,7 +24,7 @@ public class msWeek02Triangle {
         // ---------------------------------------------------------
         int a = Math.abs(rand.nextInt()) % 5 + 1;
         int b = Math.abs(rand.nextInt()) % 5 + 1;
-        int c = Math.abs(rand.nextInt()) % 25 + 1;
+        int c = Math.abs(rand.nextInt()) % 5 + 1;
 
         System.out.println("Random sides: " + a + ", " + b + ", " + c);
 
@@ -57,14 +60,13 @@ public class msWeek02Triangle {
         double leftSide = Math.pow(side1, 2) + Math.pow(side2, 2);
         double rightSide = Math.pow(hyp, 2);
 
-        // boolean isRight = (leftSide == rightSide);
+        boolean isRight = (leftSide == rightSide);
         // are they close enough (your choice) to being equal?
-        boolean isRight =  0.0000001 > Math.abs(leftSide - rightSide);
+        // boolean isRight =  0.0000001 > Math.abs(leftSide - rightSide);
         System.out.println("Is this a right triangle? " + isRight);
 
         // Show the details of the Pythagorean check
         System.out.println(side1 + "^2 + " + side2 + "^2 = " + leftSide);
         System.out.println(hyp + "^2 = " + rightSide);
-
     }
 }

@@ -28,21 +28,10 @@ public class SomeRandomStuff {
         System.out.println();
         // adjust by 1 to move the range from [0, (n-1)] to [1, n]
         System.out.println();
-        System.out.println(Math.abs(myRandomInt) % 5 + 1);
+        System.out.println(Math.abs(myRandomInt) % 12 + 1);
         System.out.println();
 
 
     }
 }
 
-
-//
-//        System.out.println("=== Week 2 Demo: Random Triangle Checker ===\n");
-//
-//        // ---------------------------------------------------------
-//        // Generate 3 random integers between 1 and 5
-//        // Use Math.abs(rand.nextInt()) % range + 1
-//        // ---------------------------------------------------------
-//        int a = Math.abs(rand.nextInt()) % 5 + 1;
-//        int b = Math.abs(rand.nextInt()) % 5 + 1;
-//        int c = Math.abs(rand.nextInt()) % 5 + 1;
