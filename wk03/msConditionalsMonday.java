@@ -11,14 +11,14 @@ public class msConditionalsMonday {
 
         // The if — runs only if the condition is true.
         // if (true) always runs; if (false) never runs.
+
 //        if (true) {
-//            System.out.println("This will always print.");
+//            System.out.println("This will always happen if condition is true.");
+//        }
+//        if (false) {
+//            System.out.println("This will NEVER happen if condition is false");
 //        }
 //
-//        if (false) {
-//            System.out.println("This will never print.");
-//        }
-
         // ───────────────────────────────────────────────────────────────
         // Example 2: Asking a question about a number
         // Read a number and ask: is it greater than 10?
@@ -33,7 +33,7 @@ public class msConditionalsMonday {
 //
 //        if (number < 10) {
 //            System.out.println("Your number is smaller than 10.");
-//        }
+//       }
 
         // ───────────────────────────────────────────────────────────────
         // Example 3: Improving the logic
@@ -51,7 +51,6 @@ public class msConditionalsMonday {
 //            System.out.println("Your number is small!");
 //        }
 
-
         // ───────────────────────────────────────────────────────────────
         // Example 4: Using else
         // Either the number is big (>= 10) or it is small (< 10).
@@ -62,6 +61,7 @@ public class msConditionalsMonday {
 //
 //        if (number >= 10) {
 //            System.out.println("Your number is big!");
+//
 //        } else {
 //            System.out.println("Your number is small!");
 //        }
@@ -79,9 +79,12 @@ public class msConditionalsMonday {
 //
 //        if (number > 10) {
 //            System.out.println("Your number is greater than 10.");
-//        } else if (number == 10) {
+//        } else if (number == 10)  {
 //            System.out.println("Your number is exactly 10.");
-//        } else {
+//        } else if (number < 0) {
+//            System.out.println("Achtung! Negative number");
+//        }
+//        else {
 //            System.out.println("Your number is less than 10.");
 //        }
 
@@ -103,7 +106,7 @@ public class msConditionalsMonday {
 //        } else {
 //            System.out.println("It's a tie!");
 //        }
-
+//        System.out.println("Here we are...");
 
         // ───────────────────────────────────────────────────────────────
         // Example 6: Password check (Strings)
@@ -143,8 +146,5 @@ public class msConditionalsMonday {
 //}
 //
 //System.out.println("Thanks! You entered " + value);
-
-
-
     }
 }
