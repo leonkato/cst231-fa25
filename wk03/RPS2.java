@@ -65,46 +65,62 @@ public class RPS2 {
         // ───────────────────────────────────────────────────────────────
         // RPS 4: Nested decisions — inner if/else based on Player 2
         // Only one outer branch runs; inside it, exactly one inner branch runs.
-        if (p1.equals("rock")) {
-            if (p2.equals("scissors")) {
-                System.out.println("Player 1 wins! rock smashes scissors");
-            } else if (p2.equals("paper")) {
-                System.out.println("Player 2 wins! paper covers rock");
-            } else if (p2.equals("rock")) {
-                System.out.println("It's a tie!");
-            } else {
-                System.out.println("Invalid input by Player 2.");
-            }
-        } else if (p1.equals("paper")) {
-            if (p2.equals("rock")) {
-                System.out.println("Player 1 wins! paper covers rock");
-            } else if (p2.equals("scissors")) {
-                System.out.println("Player 2 wins! scissors cut paper");
-            } else if (p2.equals("paper")) {
-                System.out.println("It's a tie!");
-            } else {
-                System.out.println("Invalid input by Player 2.");
-            }
-        } else if (p1.equals("scissors")) {
-            if (p2.equals("paper")) {
-                System.out.println("Player 1 wins! scissors cut paper");
-            } else if (p2.equals("rock")) {
-                System.out.println("Player 2 wins! rock smashes scissors");
-            } else if (p2.equals("scissors")) {
-                System.out.println("It's a tie!");
-            } else {
-                System.out.println("Invalid input by Player 2.");
-            }
-        } else {
-            System.out.println("Invalid input by Player 1.");
-        }
-
+//        if (p1.equals("rock")) {
+//            if (p2.equals("scissors")) {
+//                System.out.println("Player 1 wins! rock smashes scissors");
+//            } else if (p2.equals("paper")) {
+//                System.out.println("Player 2 wins! paper covers rock");
+//            } else if (p2.equals("rock")) {
+//                System.out.println("It's a tie!");
+//            } else {
+//                System.out.println("Invalid input by Player 2.");
+//            }
+//        } else if (p1.equals("paper")) {
+//            if (p2.equals("rock")) {
+//                System.out.println("Player 1 wins! paper covers rock");
+//            } else if (p2.equals("scissors")) {
+//                System.out.println("Player 2 wins! scissors cut paper");
+//            } else if (p2.equals("paper")) {
+//                System.out.println("It's a tie!");
+//            } else {
+//                System.out.println("Invalid input by Player 2.");
+//            }
+//        } else if (p1.equals("scissors")) {
+//            if (p2.equals("paper")) {
+//                System.out.println("Player 1 wins! scissors cut paper");
+//            } else if (p2.equals("rock")) {
+//                System.out.println("Player 2 wins! rock smashes scissors");
+//            } else if (p2.equals("scissors")) {
+//                System.out.println("It's a tie!");
+//            } else {
+//                System.out.println("Invalid input by Player 2.");
+//            }
+//        } else {
+//            System.out.println("Invalid input by Player 1.");
+//        }
 
 // ───────────────────────────────────────────────────────────────
-// RPS 5: Flat chain version (no nesting)
-// Same rules as above, but written as one big if/else-if chain
-// Use this after nested version to compare readability.
-
+// RPS 5: (Teaching contrast) Flat chain version — no nesting
+// SAME rules as above, but written as a single if/else-if chain.
+// Use this to discuss readability tradeoffs after students see nesting.
+//
+         if (p1.equals(p2)) {
+             System.out.println("It's a tie!");
+         } else if (p1.equals("rock") && p2.equals("scissors")) {
+             System.out.println("Player 1 wins! rock smashes scissors");
+         } else if (p1.equals("scissors") && p2.equals("rock")) {
+             System.out.println("Player 2 wins! rock smashes scissors");
+         } else if (p1.equals("paper") && p2.equals("rock")) {
+             System.out.println("Player 1 wins! paper covers rock");
+         } else if (p1.equals("rock") && p2.equals("paper")) {
+             System.out.println("Player 2 wins! paper covers rock");
+         } else if (p1.equals("scissors") && p2.equals("paper")) {
+             System.out.println("Player 1 wins! scissors cut paper");
+         } else if (p1.equals("paper") && p2.equals("scissors")) {
+             System.out.println("Player 2 wins! scissors cut paper");
+         } else {
+             System.out.println("Invalid input. Please type rock, paper, or scissors.");
+         }
 
 
 
