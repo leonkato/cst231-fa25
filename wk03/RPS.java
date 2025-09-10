@@ -8,6 +8,14 @@ import java.util.Scanner;
  * This file introduces conditionals using a simple game.
  * Each stage is commented out — uncomment one stage at a time to run it.
  */
+
+ /*
+ RPS 1–2: input + optional normalization; review .equals vs ==; show debugger!.
+ RPS 3: outer branches only; echo messages per branch.
+ RPS 4: add inner decisions; test several combos live.
+ RPS 5: show flat chain; compare to nested for readability.
+ RPS 6: quick guard-clause pattern with return; (aligns with HW Part 2b).
+  */
 public class RPS {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

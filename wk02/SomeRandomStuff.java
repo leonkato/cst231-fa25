@@ -1,6 +1,5 @@
 package wk02;
 
-
 import java.util.Random;
 
 public class SomeRandomStuff {
