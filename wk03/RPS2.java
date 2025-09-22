@@ -100,9 +100,9 @@ public class RPS2 {
 //        }
 
 // ───────────────────────────────────────────────────────────────
-// RPS 5: (Teaching contrast) Flat chain version — no nesting
+// RPS 5:  Flat chain version — no nesting
 // SAME rules as above, but written as a single if/else-if chain.
-// Use this to discuss readability tradeoffs after students see nesting.
+// discuss readability tradeoffs vs nesting.
 //
          if (p1.equals(p2)) {
              System.out.println("It's a tie!");

@@ -76,7 +76,7 @@ public class RPS {
             } else if (p2.equals("paper")) {
                 System.out.println("It's a tie!");
             } else {
-                System.out.println("Invalid input by Player 2.");
+                System.out.println("Invalid booger input by Player 2.");
             }
         } else if (p1.equals("scissors")) {
             if (p2.equals("paper")) {
