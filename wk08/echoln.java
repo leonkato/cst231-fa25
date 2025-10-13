@@ -17,5 +17,7 @@ public class echoln {
         while (fileIn.hasNextLine()) {
             System.out.println(fileIn.nextLine());
         }
+        userIn.close();
+        fileIn.close()
     }
 }

@@ -15,5 +15,7 @@ public class echo {
         while (fileIn.hasNext()) {
             System.out.println(fileIn.next());
         }
+        userIn.close();
+        fileIn.close()
     }
 }
