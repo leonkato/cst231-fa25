@@ -18,6 +18,6 @@ public class echoln {
             System.out.println(fileIn.nextLine());
         }
         userIn.close();
-        fileIn.close()
+        fileIn.close();
     }
 }

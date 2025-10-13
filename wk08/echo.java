@@ -16,6 +16,6 @@ public class echo {
             System.out.println(fileIn.next());
         }
         userIn.close();
-        fileIn.close()
+        fileIn.close();
     }
 }
