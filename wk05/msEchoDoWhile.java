@@ -9,7 +9,7 @@ public class msEchoDoWhile {
         String inString = "";
         // loop until user types "x"
          do {
-            System.out.print(" > ");
+            System.out.print(">>> ");
             inString = userIn.nextLine();
             System.out.println(inString);
         } while (!inString.equalsIgnoreCase("x"));

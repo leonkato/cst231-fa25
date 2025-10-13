@@ -3,7 +3,7 @@ package wk05;
 public class msContinueExampleBetter {
     public static void main(String[] args) {
         int i = 0;
-        while (i < 10) {
+        while (i < 7) {
             int n = i++;            // one increment in a single place
             if (n % 2 != 0) {
                 continue;  // skip odd numbers
