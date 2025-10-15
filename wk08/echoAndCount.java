@@ -1,8 +1,10 @@
 package wk08;
-import java.io.*;
+
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
-public class echo {
+public class echoAndCount {
     public static void main(String[] args) throws IOException {
 
         Scanner userIn = new Scanner(System.in);
@@ -12,11 +14,16 @@ public class echo {
         FileReader fr = new FileReader(filename);
         Scanner fileIn = new Scanner(fr);
 
+        int count = 0;
+
         while (fileIn.hasNext()) {
             System.out.println(fileIn.next());
+            count++;
         }
 
         userIn.close();
         fileIn.close();
+
+        System.out.println(count);
     }
 }
