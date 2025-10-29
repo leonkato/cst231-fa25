@@ -29,7 +29,7 @@ public class MethodsDay1 {
 //        System.out.println("Your lucky number is: " + theLuckyNumber);
 //        System.out.println("Lucky again: " + getLuckyNumber());
 //        System.out.println();
-//
+
         
         // ============================================
         // EXAMPLE 3: Methods with parameters
@@ -102,18 +102,17 @@ public class MethodsDay1 {
         int sum = a + b;
         return sum;
     }
-    
-    
+
     // EXAMPLE 4: Pattern printing
     // void (prints), takes int parameter
-    public static void printSquare(int size) {
-        for (int row = 0; row < size; row++) {
-            for (int col = 0; col < size; col++) {
-                System.out.print("* ");
-            }
-            System.out.println();  // end the row
-        }
-    }
+//    public static void printSquare(int size) {
+//        for (int row = 0; row < size; row++) {
+//            for (int col = 0; col < size; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();  // end the row
+//        }
+//    }
     
     
     // EXAMPLE 5: Scope demonstration
