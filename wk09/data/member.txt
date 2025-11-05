@@ -1,5 +1,0 @@
-larry
-curly
-paul
-george
-ringo
